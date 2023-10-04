@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="shorcut icon" href="logo.jpg">
+    <link rel="stylesheet" href="portfolio.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#performance">Performance</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero">
+      <h1>Welcome to my portfolio</h1>
+      <p>I am a web developer with experience in HTML, CSS, and JavaScript.</p>
+      <a href="#contact" class="button-hire">Hire me</a>
+      <a href="#portfolio" class="button-lrn">Learn more</a>
+    </section>
+    <section id="about">
+      <h2>About me</h2>
+      <img src="profile.jpg" alt="Profile picture">
+      <p>Hi, my name is Lakshaya.I have a knack for problem-solving, and I'm really excited for this internship. I was the type of person who loved learning something new every day. I also have excellent designing and poster-making skills, and I'm skilled in video editing. I recently completed a web development project and a full stack development project for a bike information app that will help me hone my skills for employment in the future</p>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="grid">
+        <div class="item">
+          <img src="project1.jpg" alt="Project 1">
+          <h3>Project 1</h3>
+          <p> A travel blog app is a app where an individual can share thoughts about, experiences with and tips on travel through this website</p>
+        </div>
+        <div class="item">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>Bike details app is the free app to find the registration details such as vehicle details, owner name and address, insurance and much more..</p>
+        </div>
+        <div class="item">
+          <img src="project3.jpg" alt="Project 3">
+          <h3>Project 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </section>
+    <section id="performance">
+      <h2>Performance and Skill Board</h2>
+      <table>
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+          <th>Performance</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Expert</td>
+          <td>90%</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Advanced</td>
+          <td>80%</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Intermediate</td>
+          <td>70%</td>
+        </tr>
+      </table>
+    </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Here is my resume:</p>
+      <a href="pi.pdf" class="button-hire">Resume</a>
+    </section>
+    <section id="contact">
+      <h2>Contact me</h2>
+      <form onsubmit="alert('Thank you for your message!'); return false;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </body>
+</html>
+<footer>
+  <p>&copy; <span id="currentYear"></span> Lakshaya M</p>
+</footer>
+
+<script>
+  const currentYear = new Date().getFullYear();
+  document.getElementById("currentYear").textContent = currentYear;
+</script>
+<footer>
+  <p>&copy; <span id="currentYear"></span>Lakshaya M</p>
+</footer>
+<style>
+  footer {
+    background-color: rgb(8, 13, 35);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1em;
+  }
+</style>
